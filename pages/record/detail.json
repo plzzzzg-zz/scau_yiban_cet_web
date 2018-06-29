@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wxc-list": "../../dist/packages/@minui/wxc-list/dist/index",
+    "wxc-dialog": "../../dist/packages/@minui/wxc-dialog/dist/index"
+  },
+  "navigationBarTitleText": "详情"
+}

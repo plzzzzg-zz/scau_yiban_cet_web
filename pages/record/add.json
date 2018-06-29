@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "wxc-input": "../../dist/packages/@minui/wxc-input/dist/index"
+  },
+  "navigationBarTitleText": "添加"
+}

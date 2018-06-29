@@ -1,0 +1,61 @@
+<!--pages/result/cet.wxml-->
+<view class='container'>
+  <text>大学英语{{level}}级考试成绩单</text>
+  <image src='https://i.loli.net/2018/06/01/5b10b4183c545.jpg' mode='aspectFit' class='logo'></image>
+<view class="list-wrap wd">
+    <view class="list-item">
+      <wxc-list
+              class="item"
+              title="姓名"
+              desc="{{name}}"
+              mode="{{index == list.length-1 ? 'none': ''}}"
+              arrow="{{false}}"
+              src="{{img_url}}">
+      </wxc-list>
+      <wxc-list
+              class="item"
+              title="考号"
+              desc="{{number}}"
+              arrow="{{false}}"
+              mode="{{index == list.length-1 ? 'none': ''}}"
+              src="{{img_url}}">
+      </wxc-list>
+      <wxc-list
+              class="item"
+              title="听力"
+              desc="{{hearing}}"
+              arrow="{{false}}"
+              mode="{{index == list.length-1 ? 'none': ''}}"
+              src="{{img_url}}">
+      </wxc-list>
+      <wxc-list
+              class="item"
+              title="阅读"
+              desc="{{reading}}"
+              arrow="{{false}}"
+              mode="{{index == list.length-1 ? 'none': ''}}"
+              src="{{img_url}}">
+      </wxc-list>
+      <wxc-list
+              class="item"
+              title="写作和翻译"
+              desc="{{writing}}"
+              arrow="{{false}}"
+              mode="{{index == list.length-1 ? 'none': ''}}"
+              src="{{img_url}}">
+      </wxc-list>
+      <wxc-list
+              class="item"
+              title="总分"
+              desc="{{total}}"
+              arrow="{{false}}"
+              mode="{{index == list.length-1 ? 'none': ''}}"
+              src="{{img_url}}">
+      </wxc-list>
+    </view>
+  </view>
+</view>
+
+<view class='footer'>
+  Copyright©2016-2018 易班工作站 网络技术部
+</view>

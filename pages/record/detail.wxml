@@ -1,0 +1,17 @@
+<!--pages/record/detail.wxml-->
+<view class='container'>
+  <view class="list-wrap wd">
+    <view class="list-item">
+      <wxc-list class="item" title="考号" arrow='{{false}}' desc="{{number}}" mode="true" src="{{number_img_url}}" />
+      <wxc-list class="item" title="姓名" arrow='{{false}}' desc="{{name}}" mode="true" src="{{name_img_url}}" />
+    </view>
+  </view>
+  <button class='checkBtn btn' type='primary' bindtap='checkResult' plain='true'>查成绩</button>
+  <button class='deleteBtn btn' type='warn' bindtap='deleteRecord' plain='true'>删除</button>
+    <wxc-dialog class="wxc-dialog" title="验证码" content="" confirm-text="提交" bindconfirm="onConfirm" bindcancel="onCancel" image="{{img_url}}">
+      <input class="input" bindblur='changeCheckCode' bind name='checkCode' placeholder="请输入验证码" />
+    </wxc-dialog>
+</view>
+<view class='footer'>
+  Copyright©2016-2018 易班工作站 网络技术部
+</view>

@@ -1,0 +1,11 @@
+<!--pages/record/add.wxml-->
+  <view class='container'>
+    <view class="input-wrap">
+      <wxc-input src='{{number_img_url}}' bind:input="changeNumber"  error='{{numberError}}' confirm-type='next' type="number" name='number' right='{{true}}' title="考号" placeholder="请输入考号"></wxc-input>
+      <wxc-input src="{{name_img_url}}"  bind:input="changeName" error='{{nameError}}' confirm-type='done' type="text" name='name' right='{{true}}' title="姓名" mode="normal" placeholder="请输入姓名"></wxc-input>
+    </view>
+      <button class='btn' bindtap='formSubmit' plain='true' >提交</button>
+  </view>
+  <view class='footer'>
+  Copyright©2016-2018 易班工作站 网络技术部
+</view>

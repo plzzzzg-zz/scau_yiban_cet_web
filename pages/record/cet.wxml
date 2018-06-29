@@ -1,0 +1,22 @@
+<!--pages/record/cet.wxml-->
+
+<template name="records">
+  <view class="list-wrap wd">
+    <view class="list-item">
+      <wxc-list wx:for="{{list}}" wx:key="index" class="item" title="{{item.number}}" desc="{{item.slot? '' : item.name}}" mode="{{index == list.length-1 ? 'none': ''}}" src="{{img_url}}" id="record-{{item.title}}" data-name="{{item.name}}" data-number="{{item.number}}"
+        bindtap="goDetail">
+        <view wx:if="{{item.slot && item.desc}}" class="desc-highlight">{{item.desc}}
+        </view>
+      </wxc-list>
+    </view>
+  </view>
+</template>
+
+<view class='container'>
+  <template is="records" data="{{...records}}" />
+  <button class='addBtn' bindtap='addRecord' plain='true'>添加</button>
+</view>
+
+<view class='footer'>
+  Copyright©2016-2018 易班工作站 网络技术部
+</view>

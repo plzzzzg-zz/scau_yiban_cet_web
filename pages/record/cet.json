@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "wxc-list": "../../dist/packages/@minui/wxc-list/dist/index"
+  },
+  "enablePullDownRefresh": true,
+  "navigationBarTitleText": "华农易班四六级"
+}
